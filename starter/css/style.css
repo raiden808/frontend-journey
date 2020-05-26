@@ -29,4 +29,6 @@ body {
   height: 95vh;
   background-image: url(../img/hero.jpg);
   background-size: cover;
+  /* makes the top image unmovable. */
+  background-position: top;
 }
