@@ -48,6 +48,7 @@ body {
   position: relative;
 }
 
+/* Centers things */
 .logo-box {
   position: absolute;
   top: 40px;
@@ -56,6 +57,14 @@ body {
 
 .logo {
   height: 35px;
+}
+
+.text-box {
+  position: absolute;
+  height: 35px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .heading-primary {
