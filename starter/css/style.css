@@ -70,6 +70,9 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+
+  /* removes the shakey animation */
+  backface-visibility: hidden;
 }
 
 .heading-primary-main {
