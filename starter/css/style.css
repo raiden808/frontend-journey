@@ -65,6 +65,8 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  text-align: center;
 }
 
 .heading-primary {
@@ -73,6 +75,8 @@ body {
 
   /* removes the shakey animation */
   backface-visibility: hidden;
+
+  margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -130,4 +134,25 @@ body {
     opacity: 1;
     transform: translate(0);
   }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
 }
