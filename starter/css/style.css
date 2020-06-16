@@ -17,8 +17,12 @@ Dark green: #28b485
 }
 
 /* 1 rem is = 1 root font size */
+/* defaault font size is 16px, so using percentage you get 100% of 16px. */
+/* to use 10px, 10/16 = 0.625 
+   to check 0.625*16 = 10
+*/
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 /* Always specifiy the font in Body element. */
