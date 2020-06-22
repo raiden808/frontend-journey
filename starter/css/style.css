@@ -10,10 +10,13 @@ Dark green: #28b485
 /*
 * CSS Reset 
 */
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /*INherits from body border-box*/
+  box-sizing: inherit;
 }
 
 /* 1 rem is = 1 root font size */
@@ -35,6 +38,8 @@ body {
 
   /* 30 px converted to 3 rem, root is 10px. */
   padding: 3rem;
+
+  box-sizing: border-box;
 }
 
 .header {
