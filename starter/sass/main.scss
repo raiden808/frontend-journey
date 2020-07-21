@@ -4,6 +4,7 @@ $color-primary-dark: #28b485;
 
 $color-grey-dark: #777;
 $color-white: #fff;
+$color-black: #000;
 
 /*
 * CSS Reset 
@@ -60,27 +61,27 @@ body {
   /* clip-path: polygon(50% 0, 50% 0, 100% 100%, 0 100%); */
 
   position: relative;
-}
 
-/* Centers things */
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
+  /* For BEM, basically .header__logo-box */
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
 
-.header__logo {
-  height: 3.5rem;
-}
+  &__logo {
+    height: 3.5rem;
+  }
 
-.header__text-box {
-  position: absolute;
-  height: 35px;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  &__text-box {
+    position: absolute;
+    height: 35px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  text-align: center;
+    text-align: center;
+  }
 }
 
 .heading-primary {
@@ -176,12 +177,12 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 2rem rgba($color-black, 0.2);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
 }
 
 .btn--white {
