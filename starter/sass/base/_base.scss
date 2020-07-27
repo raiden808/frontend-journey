@@ -16,19 +16,10 @@
    to check 0.625*16 = 10
 */
 html {
+  // this defiens what 1 rem is
   font-size: 62.5%;
 }
 
-/* Always specifiy the font in Body element. */
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  /* font-size: 16px; */
-  line-height: 1.7;
-  color: $color-grey-dark;
-
-  /* 30 px converted to 3 rem, root is 10px. */
-  padding: 3rem;
-
   box-sizing: border-box;
 }
