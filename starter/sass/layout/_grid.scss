@@ -10,13 +10,21 @@
 
   @include clearfix;
 
-  .col-1-of-2 {
-    width: calc((100% - #{$gutter-vertical}) / 2);
+  //targets all class name starting with col-
+  [class^="col-"] {
     background-color: orangered;
     float: left;
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
     }
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-vertical}) / 2);
+  }
+
+  .col-1-of-3 {
+    width: calc((100% - 2 * #{$gutter-vertical}) / 3);
   }
 }
