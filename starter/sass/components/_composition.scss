@@ -1,11 +1,18 @@
 .composition {
   position: relative;
 
+  //Tip: Use percentage in order to nicely scale with the viewport
+
   &__photo {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     border-radius: 2px;
     position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+
+    //provides distance for the border
+    outline-offset: 2rem;
 
     &--p1 {
       left: 0;
@@ -21,5 +28,20 @@
       left: 20%;
       top: 10rem;
     }
+
+    &:hover {
+      //for the border
+      outline: 1.5rem solid $color-primary;
+
+      transform: scale(1.05);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+      // To display on top during hover
+      z-index: 20;
+    }
+  }
+
+  //minimize other photos on hover
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
   }
 }
