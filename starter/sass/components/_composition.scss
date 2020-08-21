@@ -33,7 +33,7 @@
       //for the border
       outline: 1.5rem solid $color-primary;
 
-      transform: scale(1.05);
+      transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
       // To display on top during hover
       z-index: 20;
