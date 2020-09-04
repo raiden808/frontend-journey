@@ -13,4 +13,13 @@
     ),
     url(../img/nat-4.jpg);
   background-size: cover;
+  margin-top: -10rem;
+
+  //only skew the direct child
+  transform: skewY(-7deg);
+
+  & > * {
+    //similar to clip-path but returns to original positions
+    transform: skewY(7deg);
+  }
 }
